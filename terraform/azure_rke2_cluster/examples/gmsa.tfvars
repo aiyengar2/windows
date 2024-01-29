@@ -28,13 +28,13 @@ apps = {
   }
 
   rancher-windows-gmsa-crd = {
-    path      = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/main/assets/rancher-gmsa-webhook-crd/rancher-gmsa-webhook-crd-0.1.0.tgz"
+    path      = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/release/v0.2/assets/rancher-gmsa-webhook-crd/rancher-gmsa-webhook-crd-0.2.0-rc1.tgz"
     namespace = "cattle-windows-gmsa-system"
     values    = {}
   }
 
   rancher-windows-gmsa = {
-    path         = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/main/assets/rancher-gmsa-webhook/rancher-gmsa-webhook-0.1.0.tgz"
+    path         = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/release/v0.2/assets/rancher-gmsa-webhook/rancher-gmsa-webhook-0.2.0-rc1.tgz"
     namespace    = "cattle-windows-gmsa-system"
     values       = {}
     dependencies = ["rancher-windows-gmsa-crd", "cert-manager"]
@@ -54,13 +54,13 @@ apps = {
   }
 
   rancher-gmsa-plugin-installer = {
-    path      = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/main/assets/rancher-gmsa-plugin-installer/rancher-gmsa-plugin-installer-0.1.0.tgz"
+    path      = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/release/v0.2/assets/rancher-gmsa-plugin-installer/rancher-gmsa-plugin-installer-0.2.0-rc1.tgz"
     namespace = "cattle-windows-gmsa-system"
     values    = {}
   }
 
   rancher-gmsa-account-provider = {
-    path         = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/main/assets/rancher-gmsa-account-provider/rancher-gmsa-account-provider-0.1.0.tgz"
+    path         = "https://github.com/rancher/Rancher-Plugin-gMSA/raw/release/v0.2/assets/rancher-gmsa-account-provider/rancher-gmsa-account-provider-0.2.0-rc1.tgz"
     namespace    = "cattle-windows-gmsa-system"
     values       = {}
     dependencies = ["cert-manager"]
